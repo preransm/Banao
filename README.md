@@ -31,7 +31,7 @@ Technology Stack:
 - Package Manager: npm/bun
 
 Project Structure:
-lovable-landing-dashboard-main/
+LandingPage/
 ├── public/                 # Static assets
 ├── src/
 │   ├── components/         # Reusable React components
