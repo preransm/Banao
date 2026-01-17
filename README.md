@@ -1,73 +1,99 @@
-# Welcome to your Lovable project
+Project Name: Lovable Landing Dashboard
 
-## Project info
+Project Overview:
+This is a modern React-based web application that combines a landing page with a dashboard interface. The application features a beautiful landing page with various sections (hero, features, pricing, testimonials, FAQ) and a protected dashboard area for authenticated users. It demonstrates best practices in React development with TypeScript, modern UI components, and responsive design.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Key Features:
+- Landing Page: Multi-section landing page with hero, features, pricing, testimonials, and FAQ
+- Authentication System: Login/signup with protected routes
+- Dashboard: User dashboard with statistics, navigation, and user management
+- Responsive Design: Mobile-first approach with Tailwind CSS
+- Modern UI: shadcn-ui components for consistent design
+- TypeScript: Full type safety throughout the application
+- Routing: React Router for client-side navigation
+- State Management: React Context for authentication state
+- Testing: Vitest for unit testing
+- Build Tool: Vite for fast development and building
 
-## How can I edit this code?
+Technology Stack:
+- Frontend Framework: React 18 with TypeScript
+- Build Tool: Vite
+- Styling: Tailwind CSS with custom animations
+- UI Components: shadcn-ui (Radix UI primitives)
+- Routing: React Router DOM
+- State Management: React Context API
+- Icons: Lucide React
+- Charts: Recharts
+- Forms: React Hook Form with Zod validation
+- Notifications: Sonner for toast notifications
+- Testing: Vitest with Testing Library
+- Linting: ESLint
+- Package Manager: npm/bun
 
-There are several ways of editing your application.
+Project Structure:
+lovable-landing-dashboard-main/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable React components
+│   │   ├── ui/            # shadcn-ui components
+│   │   ├── landing/       # Landing page sections
+│   │   ├── dashboard/     # Dashboard components
+│   │   └── auth/          # Authentication components
+│   ├── pages/             # Page components
+│   ├── contexts/          # React contexts
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   └── test/              # Testing setup
+├── structure.md           # Project structure documentation
+├── workflow.md            # Development workflow documentation
+└── Configuration files    # Various config files
 
-**Use Lovable**
+Authentication Flow:
+1. User visits landing page (public route)
+2. User can sign up or log in
+3. Upon successful authentication, user is redirected to dashboard
+4. Protected routes require authentication
+5. Logout clears authentication state and redirects to landing page
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Dashboard Features:
+- Overview: Statistics cards with key metrics
+- Users Management: User list and management interface
+- Settings: User settings and preferences
+- Responsive Layout: Sidebar navigation with mobile support
+- Charts: Data visualization components
 
-Changes made via Lovable will be committed automatically to this repo.
+Development Workflow:
+1. Setup: Clone repository and install dependencies
+2. Development: Start dev server with hot reload
+3. Testing: Run tests and linting
+4. Building: Create production build
+5. Deployment: Deploy to static hosting (Vercel, Netlify, etc.)
 
-**Use your preferred IDE**
+Scripts:
+- npm run dev - Start development server
+- npm run build - Build for production
+- npm run preview - Preview production build
+- npm run test - Run tests
+- npm run lint - Run ESLint
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Deployment:
+The application can be deployed to any static hosting service. The build process generates a dist folder containing all necessary files for deployment.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Browser Support:
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile browsers
+- Progressive Web App features
 
-Follow these steps:
+Performance:
+- Fast loading with Vite build tool
+- Code splitting for optimal bundle sizes
+- Optimized images and assets
+- Responsive design for all screen sizes
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Security:
+- Client-side authentication with localStorage
+- Protected routes for sensitive areas
+- Input validation with Zod schemas
+- Secure coding practices
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
